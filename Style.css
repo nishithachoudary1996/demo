@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #b39ddb 0%, #ce93d8 100%);
+  transition: background 0.5s;
+  min-height: 100vh;
+}
+.split-container {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+}
+.side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 80px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.akshay {
+  border-right: 2px solid #fff;
+}
+.nishitha {
+  border-left: 2px solid #fff;
+}
+.love-heading {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #6a1b9a;
+  text-shadow: 1px 1px 8px #fff, 0 0 10px #ce93d8;
+  font-family: 'Pacifico', cursive, sans-serif;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4527a0;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 8px #fff;
+}
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.love-btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  background: #8e24aa;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #b39ddb;
+  transition: background 0.3s, transform 0.2s;
+  outline: none;
+}
+.love-btn:hover {
+  background: #d500f9;
+  transform: scale(1.07);
+}
+.quote {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(106, 27, 154, 0.9);
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 18px 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  z-index: 10;
+  box-shadow: 0 -2px 10px #b39ddb;
+}
+@media (max-width: 800px) {
+  .split-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .akshay, .nishitha {
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+  .nishitha {
+    border-bottom: none;
+  }
+  .love-heading {
+    font-size: 1.5rem;
+    top: 10px;
+  }
+}
